@@ -9,6 +9,7 @@ body {
     left:  0px;
     right : 0px;
     height : 75px;
+    text-align : center;
 
 }
 #newActivity {
@@ -52,5 +53,5 @@ body {
     margin : 15px;
 }
 #startBtn {
-    border-radius : 25px;
+    border-radius : 100px;
 }
