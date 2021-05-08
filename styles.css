@@ -4,12 +4,53 @@ body {
 }
 #header {
     background-color : #666;
+    position : absolute;
+    top : 0px;
+    left:  0px;
+    right : 0px;
+    height : 75px;
+
 }
 #newActivity {
-    width : 75%;
+    width : 65%;
     float : left;
+    top : 75px;
+    border-right : 2px solid #666;
 }
 
 #study, #meditate, #exercise {
     border : 1px solid white;
+    width : 150px;
+    height : 75px;
+    float : left;
+    margin : 75px;
+    text-align : center;
+}
+
+#accomplish {
+    clear : both;
+}
+.minutes {
+    float : left;
+}
+.seconds { 
+    float : left;
+}
+#start {
+    text-align : right;
+}
+
+#minutes, #seconds, #accomplishment {
+    background-color : #333;
+    border : 0;
+    border-bottom: 1px solid white;
+    width : 100%;
+    font-size : 14pt;
+}
+#container {
+    float: left;
+    margin : 15px;
+}
+#startBtn {
+    border-radius : 25px;
 }

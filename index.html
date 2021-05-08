@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- https://romantic-darwin-cce406.netlify.app/ -->
+        <script src="Activity.js"></script>
+        <script srsc="main.js">s</script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="header"><h1>INTENTION TIMER</h1></div>
-            <H2>New Activity</H2>
-            <div id="newActivity">
-                <div>Select a category</div>
-                <div id="study">Study</div>
-                <div id="meditate">Meditate</div>
-                <div id="exercise">Exercise</div>
-                <div>What would you like to accomplish during this time?</div>
-                <form>
-                <div><input type="text" id="accomplish" placeholder="Deep Breathing"></div>
-                <div><label for="Minutes" placeholder="0">Minutes</label><input type="number" id="minutes"></div>
-                <div><label for="Seconds" placeholder="0">Seconds</label><input type="number" id="seconds"></div>
-                <input type="submit" value="START">
-                </form>
+        <div id="header"><h1>INTENTION TIMER</h1></div><br/><br/><BR/><br/>
+            <div id="Activity">
+                <H2>New Activity</H2>
+                <div id="container">
+                    <div>Select a category</div>
+                    <div id="study">Study</div>
+                    <div id="meditate">Meditate</div>
+                    <div id="exercise">Exercise</div>
+                    <div id="accomplish"><strong>What would you like to accomplish during this time?</strong>
+                        <form>
+                            <div><input type="text" id="accomplishment" placeholder="Deep Breathing"></div>
+                            <div class="minutes"><label for="Minutes">Minutes</label><br/><input type="number" id="minutes" placeholder="5"></div>
+                            <div class="seconds"><label for="Seconds">Seconds</label><br/><input type="number" id="seconds" placeholder="0"></div>
+                            <br/><input type="submit" id="start" value="START ACTIVITY">
+                        </form>
+                    </div>
+                </div>
             </div>
             <div id="pastActivities">
                 <H2>Past Activities</H2>
