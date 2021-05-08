@@ -31,21 +31,23 @@ class Activity {
         this.category = _category;
         this.description = _description;
         this.minutes = _minutes;
-        this.minutes = 5;
-        if (Number.isNaN(this.minutes) || this.minutes == undefined) {
+        if (Number.isNaN(this.minutes)) {
             this.minutes = 5;
         }
+        this.minutes = 5;
+        console.log("this.minutes = " + this.minutes);
         this.seconds = _seconds;
-        this.seconds = 0;
-        if (Number.isNaN(this.seconds) || this.seconds == undefined) {
+        if (Number.isNaN(this.seconds)) {
             this.seconds = 0;
         }
+        console.log("this.seconds = " + this.seconds);
         //static this.id;
         this.id = this.id + 1;    
     }
 
     startTimer() {
         //saveToStorage();
+        console.log("Minutes and Seconds" + this.minutes + ":" + this.seconds);
         var now = new Date().getTime();
         var countDownDate = new Date().getTime() + 1000 * this.seconds + this.minutes * 60 * 1000;
         var x = setInterval(function() {
