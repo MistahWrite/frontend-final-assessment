@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- https://romantic-darwin-cce406.netlify.app/ -->
+        <!-- NETLFIY LINK: https://romantic-darwin-cce406.netlify.app/ -->
         <script src="Activity.js"></script>
-        <script srsc="main.js"></script>
+        <script src="main.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -12,9 +12,9 @@
                 <H2>New Activity</H2>
                 <div id="container">
                     <div>Select a category</div>
-                    <div id="study">Study</div>
-                    <div id="meditate">Meditate</div>
-                    <div id="exercise">Exercise</div>
+                    <div id="study" class="selected"><a href="#" onclick="selectStudy()">Study</a></div>
+                    <div id="meditate" class="not_selected"><a href="#" onclick="selectMeditate()">Meditate</a></div>
+                    <div id="exercise" class="not_selected"><a href="#" onclick="selectExercise()">Exercise</a></div>
                     <div id="accomplish"><strong>What would you like to accomplish during this time?</strong>
                         <form>
                             <div><input type="text" id="accomplishment" placeholder="Deep Breathing"></div>
@@ -26,6 +26,7 @@
                 </div>
             </div>
             <div id="timer"></div>
+                    
             <div id="pastActivities">
                 <H2>Past Activities</H2>
                 <div>You haven't logged any activities yet.  Complete the form to the left to get started!</div>

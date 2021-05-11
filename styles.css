@@ -13,19 +13,26 @@ body {
 
 }
 #newActivity {
-    width : 65%;
+    width : 75%;
     float : left;
     top : 75px;
     border-right : 2px solid #666;
 }
 
-#study, #meditate, #exercise {
-    border : 1px solid white;
+#study, #meditate, #exercise a{
     width : 150px;
     height : 75px;
     float : left;
     margin : 75px;
     text-align : center;
+}
+.not_selected {
+    color : grey;
+    border : 1px solid grey;
+}
+.selected {
+    color : white;
+    border : 1px solid white;
 }
 
 #accomplish {
